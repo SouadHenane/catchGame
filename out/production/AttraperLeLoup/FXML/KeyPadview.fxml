@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="Anchore" fx:controller="Controllers.controllKeyPad" stylesheets="/CSS/buttonCircleBlack.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="20.0" layoutY="43.0" prefHeight="17.0" prefWidth="37.0" text="+213" />
+      <TextField fx:id="txtNumber" stylesheets="/CSS/Contacts.css" layoutX="50.0" layoutY="36.0" prefHeight="25.0" prefWidth="186.0" />
+      <Button fx:id="btn1" onAction="#add1" layoutX="35.0" layoutY="110.0" mnemonicParsing="false" text="1" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0" />
+      <Button fx:id="btn2" onAction="#add2" layoutX="114.0" layoutY="110.0" mnemonicParsing="false" text="2" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btn3" onAction="#add3" layoutX="188.0" layoutY="110.0" mnemonicParsing="false" text="3" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0" />
+      <Button fx:id="btn4" onAction="#add4" layoutX="34.0" layoutY="158.0" mnemonicParsing="false" text="4" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btn5" onAction="#add5" layoutX="114.0" layoutY="158.0" mnemonicParsing="false" text="5" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btn6" onAction="#add6" layoutX="188.0" layoutY="158.0" mnemonicParsing="false" text="6" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btn7" onAction="#add7" layoutX="35.0" layoutY="206.0" mnemonicParsing="false" text="7" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btn8" onAction="#add8" layoutX="114.0" layoutY="206.0" mnemonicParsing="false" text="8" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btn9" onAction="#add9" layoutX="188.0" layoutY="206.0" mnemonicParsing="false" text="9" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btnet" onAction="#addEtoile" layoutX="35.0" layoutY="254.0" mnemonicParsing="false" text="*" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"></Button>
+      <Button fx:id="btn0" onAction="#add0" layoutX="114.0" layoutY="254.0" mnemonicParsing="false" text="0" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btndie" onAction="#addDie" layoutX="188.0" layoutY="254.0" mnemonicParsing="false" text="#" textAlignment="CENTER" prefHeight="45.0" prefWidth="45.0"/>
+      <Button fx:id="btnAppel" onAction="#Appel" layoutX="62.0" layoutY="307.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Appeler" />
+   </children>
+</AnchorPane>

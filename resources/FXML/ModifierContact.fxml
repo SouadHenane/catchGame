@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="Anchor" fx:controller="Controllers.controllModifierContact" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="26.0" prefHeight="31.0" prefWidth="160.0" text="Modifie un Contact" >
+         <font>
+            <Font name="Segoe UI" size="18.0"/>
+         </font>
+      </Label>
+      <Text layoutX="23.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :"  >
+         <font>
+            <Font name="Segoe UI" size="14.0"/>
+         </font>
+      </Text>
+      <TextField fx:id="txtNom" stylesheets="/CSS/Contacts.css" layoutX="61.0" layoutY="75.0" prefHeight="25.0" prefWidth="157.0" />
+      <Text layoutX="14.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephones" wrappingWidth="80.779296875" />
+      <ScrollPane style="-fx-background-color: white" layoutX="23.0" layoutY="155.0" prefHeight="169.0" prefWidth="157.0">
+         <content>
+            <VBox fx:id="NumbersBox" prefHeight="167.0" prefWidth="155.0" />
+         </content>
+      </ScrollPane>
+      <Hyperlink onAction="#addNumber" layoutX="162.0" layoutY="124.0" text="Ajouter Numero" />
+      <Button stylesheets="/CSS/buttonCircleBlack.css" onAction="#save" layoutX="184.0" layoutY="341.0" mnemonicParsing="false" text="Enregister" />
+   </children>
+</AnchorPane>

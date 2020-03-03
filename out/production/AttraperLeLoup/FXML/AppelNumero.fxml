@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="Anchore" fx:controller="Controllers.controllCall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="seconds" layoutX="147.0" layoutY="155.0" prefHeight="44.0" prefWidth="24.0" text=": 00" >
+         <font>
+            <Font name="Segoe UI" size="14.0"/>
+         </font>
+      </Label>
+      <Label fx:id="minutes" layoutX="123.0" layoutY="155.0" prefHeight="44.0" prefWidth="24.0" text=": 00" textAlignment="RIGHT" >
+         <font>
+            <Font name="Segoe UI" size="14.0"/>
+         </font>
+      </Label>
+      <Label fx:id="hours" layoutX="105.0" layoutY="155.0" prefHeight="44.0" prefWidth="18.0" text="00" textAlignment="RIGHT" >
+         <font>
+            <Font name="Segoe UI" size="14.0"/>
+         </font>
+      </Label>
+      <Label fx:id="nom" layoutX="110.0" layoutY="39.0" prefHeight="51.0" prefWidth="200.0" text="Label" textAlignment="CENTER" >
+         <font>
+            <Font name="Segoe UI" size="20.0"/>
+         </font>
+      </Label>
+      <Label fx:id="Numero" layoutX="80.0" layoutY="90.0" prefHeight="23.0" prefWidth="200.0" text="Label" >
+         <font>
+            <Font name="Segoe UI" size="18.0"/>
+         </font>
+      </Label>
+      <Button stylesheets="/CSS/buttonCircleBlack.css" fx:id="hangUp" onAction="#HangUp" layoutX="77.0" layoutY="269.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="117.0" text="Terminer" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="MainAnchor"  stylesheets="/CSS/Contacts.css" fx:controller="Controllers.mainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fx:id="AnchorPhone" fitHeight="557.0" fitWidth="299.0" layoutX="151.0" layoutY="17.0">
+            <image>
+                <Image url="/Images/Phone.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="166.0" layoutY="78.0" prefHeight="430.0" prefWidth="270.0" >
+            <children>
+                <HBox layoutY="381.0" layoutX="0" prefHeight="49.0" prefWidth="270.0">
+                    <children>
+                        <Button fx:id="btnRecents" onAction="#loadRecents" styleClass="btn" style="-fx-background-color: #f6f6f6" mnemonicParsing="false" prefHeight="49.0" prefWidth="90.0" >
+                        <graphic>
+
+                            <ImageView  fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" >
+                                <image>
+                                    <Image url="/Images/Recents.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        </Button>
+                        <Button fx:id="btnContacts" onAction="#loadContacts" styleClass="btn" style="-fx-background-color: #f6f6f6" mnemonicParsing="false" prefHeight="56.0" prefWidth="90.0" >
+                            <graphic>
+
+                                <ImageView  fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true"  >
+                                    <image>
+                                        <Image url="/Images/Contacts.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button  styleClass="btn" fx:id="btnKeypad" onAction="#loadKeypadView" style="-fx-background-color: #f6f6f6" mnemonicParsing="false" prefHeight="58.0" prefWidth="89.0" >
+                            <graphic>
+
+                                <ImageView  fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" >
+                                    <image>
+                                        <Image url="/Images/KeyPad.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </HBox>
+                <AnchorPane fx:id="OperationAnchor" prefHeight="380.0" prefWidth="270.0" style="-fx-border-color: black">
+
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <Button layoutX="450.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: transparent" onAction="#Close" >
+        <graphic>
+
+                <ImageView  fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" >
+                    <image>
+                        <Image url="/Images/buttonClose.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+
+        </Button>
+    </children>
+</AnchorPane>

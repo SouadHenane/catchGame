@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="Anchore" fx:controller="Controllers.controllContactInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="contactName" layoutX="19.0" layoutY="46.0" prefHeight="35.0" prefWidth="140.0" text="Contact Name" >
+         <font>
+            <Font name="Segoe UI" size="14.0"/>
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="108.0" text="Telephones" />
+      <ScrollPane stylesheets="/CSS/ContactsView.css" style="-fx-background-color: white" layoutX="15.0" layoutY="135.0" prefHeight="134.0" prefWidth="178.0">
+         <content>
+            <VBox style="-fx-background-color: white" fx:id="NumbersBox" prefHeight="129.0" prefWidth="176.0" />
+         </content>
+      </ScrollPane>
+      <Text fx:id="txtCout" layoutX="12.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cout des Appels" wrappingWidth="98.00000102818012" />
+      <Label layoutX="104.0" layoutY="340.0" prefHeight="17.0" prefWidth="69.0" />
+      <Hyperlink onAction="#delete" layoutX="202.0" layoutY="10.0" text="Supprimer" />
+      <Hyperlink onAction="#edit" layoutX="139.0" layoutY="10.0" text="Modifier" />
+   </children>
+</AnchorPane>
